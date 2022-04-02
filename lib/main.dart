@@ -1,5 +1,6 @@
 import 'package:code_dojo/app/dashboard/dashboard_page.dart';
 import 'package:code_dojo/app/description/description_page.dart';
+import 'package:code_dojo/app/ranking/ranking_page.dart';
 import 'package:code_dojo/app/top/top_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -26,7 +27,11 @@ class MyApp extends StatelessWidget {
       GoRoute(
         path: '/description',
         builder: (context, state) => const DescriptionPage(),
-      )
+      ),
+      GoRoute(
+        path: '/ranking',
+        builder: (context, state) => const RankingPage(),
+      ),
     ],
     // TODO(someone): add Error page
     // errorBuilder: (context, state) => ErrorScreen(state.error),
