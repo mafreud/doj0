@@ -11,16 +11,17 @@ class TopPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Welcome',
+            const Text(
+              'Code Dojo(v0.1.0)',
               style: TextStyle(fontSize: 30, color: Colors.white),
+              textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
               onPressed: () => context.go('/dashboard'),
-              child: Text('Sign in'),
+              child: const Text('Sign in'),
             )
           ],
         ),

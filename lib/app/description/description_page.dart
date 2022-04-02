@@ -7,9 +7,9 @@ class DescriptionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('詳細説明'),
+        title: const Text('詳細説明'),
       ),
-      body: Card(
+      body: const Card(
         child: Text('card'),
       ),
     );
